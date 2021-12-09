@@ -1,0 +1,23 @@
+{
+  "name": "twitter-clone",
+  "version": "1.0.0",
+  "description": "My first Node Package Manager for twitter clone project",
+  "main": "MyApp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node MyApp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adil-ammar/Twitter-Clone.git"
+  },
+  "author": "Adil Ammar Baig Mirza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adil-ammar/Twitter-Clone/issues"
+  },
+  "homepage": "https://github.com/adil-ammar/Twitter-Clone#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
