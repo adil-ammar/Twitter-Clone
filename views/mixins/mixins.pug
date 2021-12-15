@@ -1,0 +1,10 @@
+// mixins are reusable block code
+// the following function creates a form to post something on home page
+mixin createPostForm(userLoggedIn)
+    .postFormContainer 
+        .userImageContainer     
+            img(src=userLoggedIn.profilePic, alt="User's profile picture")
+        .textareaContainer 
+            textarea#postTextarea(placeholder="what's happening?")
+            .buttonsContainer   
+                button#submitPostButton(disabled="") Post

@@ -10,9 +10,10 @@ app.set("view engine", "pug");
 app.set("views", "views");
 
 //app uses the body parser now
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 router.get("/", (req, res, next) => {
+    
     res.status(200).render("register");
 })
 
@@ -58,7 +59,7 @@ router.post("/", async (req, res, next) => {
         else{
             // user already exists
             if(email == user.email){
-                payload.errorMessage = "Account associated with the email already exists."
+                payload.errorMessage = "Account associated with the email already exists.";
             }
             else{
                 payload.errorMessage = "Username already in use.";
@@ -68,7 +69,7 @@ router.post("/", async (req, res, next) => {
     }
 
     else{
-        payload.errorMessage = "Make sure each entry has a valid value";
+        payload.errorMessage = "Make sure each entry has a valid value.";
         res.status(200).render("register", payload);
     }
 
