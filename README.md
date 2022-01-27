@@ -1,3 +1,3 @@
 # Twitter-Clone
 End to End Working Twitter Clone Project
-Tools and Tech Used: NodeJS, Sockets
+Tech Stack: NodeJS, React JS, JavaScript, Socket.io, MongoDB
